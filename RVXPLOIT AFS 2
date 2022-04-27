@@ -1,0 +1,281 @@
+local RVXPLOIT = Instance.new("ScreenGui")
+local MainUI = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local MainUI_2 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Top = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local MiddleFrame = Instance.new("Frame")
+local UIGradient_3 = Instance.new("UIGradient")
+local FarmUI = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local ToggleButton = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local ToggleNotif = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local UIGradient_4 = Instance.new("UIGradient")
+local Close = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+
+--Properties:
+
+RVXPLOIT.Name = "RVXPLOIT"
+RVXPLOIT.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+RVXPLOIT.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainUI.Name = "MainUI"
+MainUI.Parent = RVXPLOIT
+MainUI.AnchorPoint = Vector2.new(0.5, 0.5)
+MainUI.BackgroundColor3 = Color3.fromRGB(27, 42, 53)
+MainUI.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainUI.BorderSizePixel = 0
+MainUI.Position = UDim2.new(0.0799999982, 0, 0.125, 0)
+MainUI.Size = UDim2.new(0.160104841, 0, 0.141450852, 0)
+MainUI.Active = true
+
+UICorner.CornerRadius = UDim.new(0.100000001, 0)
+UICorner.Parent = MainUI
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(31, 32, 35)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(28, 28, 35))}
+UIGradient.Rotation = -90
+UIGradient.Parent = MainUI
+
+MainUI_2.Name = "MainUI"
+MainUI_2.Parent = MainUI
+MainUI_2.AnchorPoint = Vector2.new(0.5, 0.5)
+MainUI_2.BackgroundColor3 = Color3.fromRGB(27, 42, 53)
+MainUI_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainUI_2.BorderSizePixel = 0
+MainUI_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+MainUI_2.Size = UDim2.new(1.00000012, 0, 1, 0)
+
+UICorner_2.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_2.Parent = MainUI_2
+
+Top.Name = "Top"
+Top.Parent = MainUI_2
+Top.AnchorPoint = Vector2.new(0.5, 0.5)
+Top.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Top.BackgroundTransparency = 1.000
+Top.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Top.BorderSizePixel = 0
+Top.Position = UDim2.new(0.499772727, 0, 0.0362424515, 0)
+Top.Size = UDim2.new(1.00045466, 0, 0.0740740821, 0)
+
+UICorner_3.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_3.Parent = Top
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(31, 32, 35)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(28, 28, 35))}
+UIGradient_2.Rotation = -90
+UIGradient_2.Parent = Top
+
+MiddleFrame.Name = "MiddleFrame"
+MiddleFrame.Parent = Top
+MiddleFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+MiddleFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MiddleFrame.BackgroundTransparency = 1.000
+MiddleFrame.BorderSizePixel = 0
+MiddleFrame.Position = UDim2.new(0.5, 0, 8.4526186, 0)
+MiddleFrame.Size = UDim2.new(1.00000012, 0, 9.90439224, 0)
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(31, 32, 35)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(28, 28, 35))}
+UIGradient_3.Rotation = 90
+UIGradient_3.Parent = MiddleFrame
+
+FarmUI.Name = "FarmUI"
+FarmUI.Parent = MiddleFrame
+FarmUI.BackgroundColor3 = Color3.fromRGB(214, 216, 216)
+FarmUI.LayoutOrder = 3
+FarmUI.Position = UDim2.new(0.0458781384, 0, 0.220735312, 0)
+FarmUI.Size = UDim2.new(0.899999976, 0, 0.527466178, 0)
+FarmUI.ZIndex = 2
+
+UICorner_4.CornerRadius = UDim.new(0, 50)
+UICorner_4.Parent = FarmUI
+
+ToggleButton.Name = "ToggleButton"
+ToggleButton.Parent = FarmUI
+ToggleButton.Active = true
+ToggleButton.BackgroundColor3 = Color3.fromRGB(132, 132, 132)
+ToggleButton.BackgroundTransparency = 1.000
+ToggleButton.Position = UDim2.new(0.0399722084, 0, 0, 0)
+ToggleButton.Selectable = true
+ToggleButton.Size = UDim2.new(0.638019323, 0, 0.999999702, 0)
+ToggleButton.ZIndex = 2
+ToggleButton.Font = Enum.Font.FredokaOne
+ToggleButton.Text = "Auto Yen & Shards"
+ToggleButton.TextColor3 = Color3.fromRGB(9, 9, 9)
+ToggleButton.TextScaled = true
+ToggleButton.TextSize = 20.000
+ToggleButton.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0, 15)
+UICorner_5.Parent = ToggleButton
+
+ToggleNotif.Name = "ToggleNotif"
+ToggleNotif.Parent = FarmUI
+ToggleNotif.Active = false
+ToggleNotif.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+ToggleNotif.Position = UDim2.new(0.72167927, 0, 0.18280156, 0)
+ToggleNotif.Selectable = false
+ToggleNotif.Size = UDim2.new(0.236306876, 0, 0.63418752, 0)
+ToggleNotif.ZIndex = 5
+ToggleNotif.Text = ""
+ToggleNotif.TextTransparency = 1.000
+
+UICorner_6.CornerRadius = UDim.new(0, 50)
+UICorner_6.Parent = ToggleNotif
+
+Frame.Parent = ToggleNotif
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.0480000004, 0, 0.0829999968, 0)
+Frame.Size = UDim2.new(0.432000011, 0, 0.850000024, 0)
+Frame.ZIndex = 5
+
+UICorner_7.CornerRadius = UDim.new(0, 50)
+UICorner_7.Parent = Frame
+
+Title.Name = "Title"
+Title.Parent = Top
+Title.AnchorPoint = Vector2.new(0.5, 0.5)
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.190229088, 0, 1.52117765, 0)
+Title.Size = UDim2.new(0.381579578, 0, 3.83799577, 0)
+Title.Font = Enum.Font.Sarpanch
+Title.Text = "RVXPLOIT"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(31, 32, 35)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(28, 28, 35))}
+UIGradient_4.Rotation = -90
+UIGradient_4.Parent = MainUI_2
+
+Close.Name = "Close"
+Close.Parent = MainUI
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.99947238, 0, 0, 0)
+Close.Size = UDim2.new(0, 16, 0, 19)
+Close.Font = Enum.Font.FredokaOne
+Close.Text = "<"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+Open.Name = "Open"
+Open.Parent = MainUI
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.BackgroundTransparency = 1.000
+Open.Position = UDim2.new(0.99947238, 0, 0, 0)
+Open.Rotation = 180.000
+Open.Size = UDim2.new(0, 16, 0, 19)
+Open.Visible = false
+Open.Font = Enum.Font.FredokaOne
+Open.Text = "<"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+-- Scripts:
+
+local function ENRPQWY_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local Toggle = true
+	local Replicated = game:GetService("ReplicatedStorage")
+	local Multiplier = 14
+	
+	script.Parent.Parent.MouseButton1Click:Connect(function()
+		if Toggle == true then
+			script.Parent:TweenPosition(
+				UDim2.new(0.53, 0, 0.083, 0),
+				"Out",
+				"Quad",
+				0.5,
+				false
+			)
+			wait(0.5)
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+			Multiplier = 14
+			while true do task.wait(.2)
+				for i = 10, Multiplier do
+					task.spawn(function()
+						Replicated.RSPackage.Events.GeneralFunction:InvokeServer("LotteryRandomDraw")
+						Replicated.RSPackage.Events.GeneralEvent:FireServer("SpinFinished")
+						Toggle = false
+					end)
+				end
+			end
+		else if Toggle == false then
+				script.Parent:TweenPosition(
+					UDim2.new(0.048, 0, 0.083, 0),
+					"Out",
+					"Quad",
+					0.5,
+					false
+				)
+				wait(0.5)
+				script.Parent.BackgroundColor3 = Color3.new(1, 1, 1)
+				Multiplier = 0
+				while true do task.wait(.2)
+					for i = 10, Multiplier do
+						task.spawn(function()
+							Replicated.RSPackage.Events.GeneralFunction:InvokeServer("LotteryRandomDraw")
+							Replicated.RSPackage.Events.GeneralEvent:FireServer("SpinFinished")
+							Toggle = true
+						end)
+					end
+				end
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(ENRPQWY_fake_script)()
+local function GFIGLNS_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	function click()
+		script.Parent.Parent.Close.Visible = false
+		script.Parent.Parent.Parent.MainUI:TweenPosition(
+			UDim2.new(-0.081, 0,0.125, 0),
+			"InOut",
+			"Quad",
+			1,
+			false
+		)
+		wait(1)
+		script.Parent.Parent.Open.Visible = true
+	end
+	script.Parent.MouseButton1Click:Connect(click)
+end
+coroutine.wrap(GFIGLNS_fake_script)()
+local function FMPIXEU_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	function click()
+		script.Parent.Parent.Open.Visible = false
+		script.Parent.Parent.Parent.MainUI:TweenPosition(
+			UDim2.new(0.08, 0,0.125, 0),
+			"InOut",
+			"Quad",
+			1,
+			false
+		)
+		wait(1)
+		script.Parent.Parent.Close.Visible = true
+	end
+	script.Parent.MouseButton1Click:Connect(click)
+end
+coroutine.wrap(FMPIXEU_fake_script)()
