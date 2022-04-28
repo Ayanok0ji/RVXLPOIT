@@ -1,1 +1,6 @@
-
+local id = game.PlaceId
+if id == 3102144307 then --ACS
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/DookDekDEE/ACS/main/script.lua")()
+elseif id == 6299805723 then --AFS
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/DookDekDEE/AFS/main/script.lua")()
+end
