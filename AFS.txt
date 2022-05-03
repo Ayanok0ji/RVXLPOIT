@@ -1,0 +1,549 @@
+local RVXPLOITAFS = Instance.new("ScreenGui")
+local MainUI = Instance.new("Frame")
+local Top = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local RvxTitle = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local Farm = Instance.new("Frame")
+local FarmUI = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local ToggleButton = Instance.new("TextLabel")
+local ToggleNotif = Instance.new("TextButton")
+local On = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local ChakraUI = Instance.new("Frame")
+local Name = Instance.new("TextLabel")
+local Execute = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
+local UICorner_7 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_8 = Instance.new("UICorner")
+local Setting = Instance.new("Frame")
+local CreditsUI = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local CrdtsName = Instance.new("TextLabel")
+local UIGradient_4 = Instance.new("UIGradient")
+local DestroyUI = Instance.new("Frame")
+local SettingName = Instance.new("TextLabel")
+local Destroy = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local UICorner_11 = Instance.new("UICorner")
+local UIGradient_5 = Instance.new("UIGradient")
+local UICorner_12 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local Select = Instance.new("Frame")
+local UIGradient_6 = Instance.new("UIGradient")
+local UICorner_13 = Instance.new("UICorner")
+local SettingButton = Instance.new("TextButton")
+local FarmButton = Instance.new("TextButton")
+local KeyUI = Instance.new("Frame")
+local UIGradient_7 = Instance.new("UIGradient")
+local Circle = Instance.new("Frame")
+local UICorner_14 = Instance.new("UICorner")
+local Lock = Instance.new("ImageLabel")
+local WaitKey = Instance.new("TextLabel")
+local Line1 = Instance.new("Frame")
+local KeyBox = Instance.new("TextBox")
+local UICorner_15 = Instance.new("UICorner")
+local Line2 = Instance.new("Frame")
+local Link = Instance.new("TextLabel")
+local UICorner_16 = Instance.new("UICorner")
+local Rvxploit = Instance.new("TextLabel")
+local UICorner_17 = Instance.new("UICorner")
+local Toggle = true
+local FarmInfo = false
+local Multiplier = 0
+local Replicated = game:GetService("ReplicatedStorage")
+
+--Properties:
+
+RVXPLOITAFS.Name = "RVXPLOIT AFS"
+RVXPLOITAFS.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+RVXPLOITAFS.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+RVXPLOITAFS.ResetOnSpawn = false
+
+MainUI.Name = "MainUI"
+MainUI.Parent = RVXPLOITAFS
+MainUI.AnchorPoint = Vector2.new(0.5, 0.5)
+MainUI.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+MainUI.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainUI.BorderSizePixel = 0
+MainUI.Position = UDim2.new(0.498851627, 0, 0.499050707, 0)
+MainUI.Size = UDim2.new(0.213802919, 0, 0.282977849, 0)
+MainUI.Visible = false
+MainUI.Active = true
+MainUI.Draggable = true
+
+Top.Name = "Top"
+Top.Parent = MainUI
+Top.BackgroundColor3 = Color3.fromRGB(255, 255, 25526)
+Top.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Top.BorderSizePixel = 0
+Top.Position = UDim2.new(-0.165750399, 0, 0, 0)
+Top.Size = UDim2.new(1.16378748, 0, 0.216586158, 0)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(31, 32, 35)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(28, 28, 35))}
+UIGradient.Rotation = -90
+UIGradient.Parent = Top
+
+RvxTitle.Name = "RvxTitle"
+RvxTitle.Parent = Top
+RvxTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RvxTitle.BackgroundTransparency = 1.000
+RvxTitle.Position = UDim2.new(0, 0, 0.182302997, 0)
+RvxTitle.Size = UDim2.new(0.693226635, 0, 0.635393918, 0)
+RvxTitle.Font = Enum.Font.GothamSemibold
+RvxTitle.Text = "Anime Figting Simulator | RvxPloit"
+RvxTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+RvxTitle.TextScaled = true
+RvxTitle.TextSize = 14.000
+RvxTitle.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = Top
+
+Farm.Name = "Farm"
+Farm.Parent = MainUI
+Farm.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Farm.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Farm.BorderSizePixel = 0
+Farm.Position = UDim2.new(0.0355170444, 0, 0.262458533, 0)
+Farm.Size = UDim2.new(0.930202246, 0, 0.661149681, 0)
+
+FarmUI.Name = "FarmUI"
+FarmUI.Parent = Farm
+FarmUI.BackgroundColor3 = Color3.fromRGB(214, 216, 216)
+FarmUI.BorderColor3 = Color3.fromRGB(27, 42, 53)
+FarmUI.Position = UDim2.new(0.0458780825, 0, 0.270890296, 0)
+FarmUI.Size = UDim2.new(0.900000036, 0, 0.206324607, 0)
+FarmUI.ZIndex = 2
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = FarmUI
+
+ToggleButton.Name = "ToggleButton"
+ToggleButton.Parent = FarmUI
+ToggleButton.Active = true
+ToggleButton.BackgroundColor3 = Color3.fromRGB(132, 132, 132)
+ToggleButton.BackgroundTransparency = 1.000
+ToggleButton.Position = UDim2.new(0.0510254726, 0, 0.182801872, 0)
+ToggleButton.Selectable = true
+ToggleButton.Size = UDim2.new(0.669848621, 0, 0.634188533, 0)
+ToggleButton.ZIndex = 2
+ToggleButton.Font = Enum.Font.GothamSemibold
+ToggleButton.Text = "Auto Yen & Shards"
+ToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleButton.TextScaled = true
+ToggleButton.TextSize = 15.000
+ToggleButton.TextWrapped = true
+
+ToggleNotif.Name = "ToggleNotif"
+ToggleNotif.Parent = FarmUI
+ToggleNotif.Active = false
+ToggleNotif.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+ToggleNotif.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ToggleNotif.Position = UDim2.new(0.72167927, 0, 0.18280156, 0)
+ToggleNotif.Selectable = false
+ToggleNotif.Size = UDim2.new(0.236306861, 0, 0.63418752, 0)
+ToggleNotif.ZIndex = 5
+ToggleNotif.Text = ""
+ToggleNotif.TextTransparency = 1.000
+ToggleNotif.MouseButton1Click:Connect(function()
+	if Toggle == true then
+		On:TweenPosition(
+			UDim2.new(0.53, 0, 0.083, 0),
+			"Out",
+			"Quad",
+			0.5,
+			false
+		)
+		wait(0.5)
+		Multiplier = 100
+		FarmInfo = true
+		Toggle = false
+		while FarmInfo == true do task.wait(0)
+			for i = 10, Multiplier do
+				task.spawn(function()
+					Replicated.RSPackage.Events.GeneralFunction:InvokeServer("LotteryRandomDraw")
+					Replicated.RSPackage.Events.GeneralEvent:FireServer("SpinFinished")
+				end)
+			end
+		end
+	else
+		if Toggle == false then
+			On:TweenPosition(
+				UDim2.new(0.048, 0, 0.083, 0),
+				"Out",
+				"Quad",
+				0.5,
+				false
+			)
+			wait(0.5)
+			Multiplier = 0
+			Toggle = true
+		end
+	end
+end)
+
+On.Name = "On"
+On.Parent = ToggleNotif
+On.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+On.Position = UDim2.new(0.0480000004, 0, 0.0829999968, 0)
+On.Size = UDim2.new(0.432000011, 0, 0.850000024, 0)
+On.ZIndex = 5
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = On
+
+UICorner_4.CornerRadius = UDim.new(0, 4)
+UICorner_4.Parent = ToggleNotif
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(31, 32, 35)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(28, 28, 35))}
+UIGradient_2.Rotation = -90
+UIGradient_2.Parent = FarmUI
+
+ChakraUI.Name = "ChakraUI"
+ChakraUI.Parent = Farm
+ChakraUI.BackgroundColor3 = Color3.fromRGB(214, 216, 216)
+ChakraUI.Position = UDim2.new(0.045878049, 0, 0.631806791, 0)
+ChakraUI.Size = UDim2.new(0.899999976, 0, 0.206, 0)
+
+Name.Name = "Name"
+Name.Parent = ChakraUI
+Name.Active = true
+Name.BackgroundColor3 = Color3.fromRGB(132, 132, 132)
+Name.BackgroundTransparency = 1.000
+Name.Position = UDim2.new(0.0510254726, 0, 0.182801872, 0)
+Name.Selectable = true
+Name.Size = UDim2.new(0.669848621, 0, 0.634188533, 0)
+Name.ZIndex = 2
+Name.Font = Enum.Font.GothamSemibold
+Name.Text = "Auto Fast Chakra"
+Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name.TextScaled = true
+Name.TextSize = 15.000
+Name.TextWrapped = true
+
+Execute.Name = "Execute"
+Execute.Parent = ChakraUI
+Execute.Active = false
+Execute.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Execute.Position = UDim2.new(0.72167927, 0, 0.18280156, 0)
+Execute.Selectable = false
+Execute.Size = UDim2.new(0.236306861, 0, 0.63418752, 0)
+Execute.ZIndex = 5
+Execute.Font = Enum.Font.GothamSemibold
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute.TextScaled = true
+Execute.TextWrapped = true
+Execute.MouseButton1Click:Connect(function()
+	coroutine.wrap(function()
+		for i = 1,3000 do
+			task.spawn(function()
+				Replicated.RSPackage.Events.StatFunction:InvokeServer('Stat', 'Chakra')
+			end)
+		end
+	end)()
+
+	for i = 1,1000 do
+		for i = 1,1000 do
+			for i = 1,10000 do	
+			end
+		end
+	end
+end)
+
+UICorner_5.CornerRadius = UDim.new(0, 4)
+UICorner_5.Parent = Execute
+
+UICorner_6.CornerRadius = UDim.new(0, 4)
+UICorner_6.Parent = ChakraUI
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(31, 32, 35)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(28, 28, 35))}
+UIGradient_3.Rotation = -90
+UIGradient_3.Parent = ChakraUI
+
+UICorner_7.CornerRadius = UDim.new(0, 4)
+UICorner_7.Parent = Farm
+
+TextLabel.Parent = Farm
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(0.239031985, 0, 0.228929266, 0)
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.Text = "Farm"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+UICorner_8.CornerRadius = UDim.new(0, 4)
+UICorner_8.Parent = MainUI
+
+Setting.Name = "Setting"
+Setting.Parent = MainUI
+Setting.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Setting.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Setting.BorderSizePixel = 0
+Setting.Position = UDim2.new(0.0355170444, 0, 0.262458533, 0)
+Setting.Size = UDim2.new(0.930202246, 0, 0.661149681, 0)
+Setting.Visible = false
+
+CreditsUI.Name = "CreditsUI"
+CreditsUI.Parent = Setting
+CreditsUI.BackgroundColor3 = Color3.fromRGB(214, 216, 216)
+CreditsUI.BorderColor3 = Color3.fromRGB(27, 42, 53)
+CreditsUI.Position = UDim2.new(0.0458780825, 0, 0.270890296, 0)
+CreditsUI.Size = UDim2.new(0.900000036, 0, 0.206324607, 0)
+CreditsUI.ZIndex = 2
+
+UICorner_9.CornerRadius = UDim.new(0, 4)
+UICorner_9.Parent = CreditsUI
+
+CrdtsName.Name = "CrdtsName"
+CrdtsName.Parent = CreditsUI
+CrdtsName.Active = true
+CrdtsName.BackgroundColor3 = Color3.fromRGB(132, 132, 132)
+CrdtsName.BackgroundTransparency = 1.000
+CrdtsName.Position = UDim2.new(0.166919768, 0, 0.182801872, 0)
+CrdtsName.Selectable = true
+CrdtsName.Size = UDim2.new(0.669848621, 0, 0.634188533, 0)
+CrdtsName.ZIndex = 2
+CrdtsName.Font = Enum.Font.GothamSemibold
+CrdtsName.Text = "Made by ayanokoji#9273"
+CrdtsName.TextColor3 = Color3.fromRGB(255, 255, 255)
+CrdtsName.TextScaled = true
+CrdtsName.TextSize = 15.000
+CrdtsName.TextWrapped = true
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(31, 32, 35)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(28, 28, 35))}
+UIGradient_4.Rotation = -90
+UIGradient_4.Parent = CreditsUI
+
+DestroyUI.Name = "DestroyUI"
+DestroyUI.Parent = Setting
+DestroyUI.BackgroundColor3 = Color3.fromRGB(214, 216, 216)
+DestroyUI.Position = UDim2.new(0.045878049, 0, 0.631806791, 0)
+DestroyUI.Size = UDim2.new(0.899999976, 0, 0.206, 0)
+
+SettingName.Name = "SettingName"
+SettingName.Parent = DestroyUI
+SettingName.Active = true
+SettingName.BackgroundColor3 = Color3.fromRGB(132, 132, 132)
+SettingName.BackgroundTransparency = 1.000
+SettingName.Position = UDim2.new(0.0510254726, 0, 0.182801872, 0)
+SettingName.Selectable = true
+SettingName.Size = UDim2.new(0.669848621, 0, 0.634188533, 0)
+SettingName.ZIndex = 2
+SettingName.Font = Enum.Font.GothamSemibold
+SettingName.Text = "Destroy Gui"
+SettingName.TextColor3 = Color3.fromRGB(255, 255, 255)
+SettingName.TextScaled = true
+SettingName.TextSize = 15.000
+SettingName.TextWrapped = true
+
+Destroy.Name = "Destroy"
+Destroy.Parent = DestroyUI
+Destroy.Active = false
+Destroy.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Destroy.Position = UDim2.new(0.72167927, 0, 0.18280156, 0)
+Destroy.Selectable = false
+Destroy.Size = UDim2.new(0.236306861, 0, 0.63418752, 0)
+Destroy.ZIndex = 5
+Destroy.Font = Enum.Font.GothamSemibold
+Destroy.Text = "Destroy"
+Destroy.TextColor3 = Color3.fromRGB(255, 255, 255)
+Destroy.TextScaled = true
+Destroy.TextWrapped = true
+Destroy.MouseButton1Click:Connect(function()
+	MainUI.Visible = false
+end)
+
+UICorner_10.CornerRadius = UDim.new(0, 4)
+UICorner_10.Parent = Destroy
+
+UICorner_11.CornerRadius = UDim.new(0, 4)
+UICorner_11.Parent = DestroyUI
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(31, 32, 35)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(28, 28, 35))}
+UIGradient_5.Rotation = -90
+UIGradient_5.Parent = DestroyUI
+
+UICorner_12.CornerRadius = UDim.new(0, 4)
+UICorner_12.Parent = Setting
+
+TextLabel_2.Parent = Setting
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Size = UDim2.new(0.239031985, 0, 0.228929266, 0)
+TextLabel_2.Font = Enum.Font.GothamSemibold
+TextLabel_2.Text = "Setting"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 14.000
+
+Select.Name = "Select"
+Select.Parent = MainUI
+Select.BackgroundColor3 = Color3.fromRGB(255, 255, 25526)
+Select.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Select.BorderSizePixel = 0
+Select.Position = UDim2.new(-0.165750474, 0, 0.177101806, 0)
+Select.Size = UDim2.new(0.179446384, 0, 0.822898507, 0)
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(31, 32, 35)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(28, 28, 35))}
+UIGradient_6.Rotation = -90
+UIGradient_6.Parent = Select
+
+UICorner_13.CornerRadius = UDim.new(0, 4)
+UICorner_13.Parent = Select
+
+SettingButton.Name = "SettingButton"
+SettingButton.Parent = Select
+SettingButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SettingButton.BackgroundTransparency = 1.000
+SettingButton.Position = UDim2.new(-3.72165772e-07, 0, 0.284375966, 0)
+SettingButton.Size = UDim2.new(1.00000048, 0, 0.130124524, 0)
+SettingButton.Font = Enum.Font.GothamSemibold
+SettingButton.Text = "Setting"
+SettingButton.TextColor3 = Color3.fromRGB(116, 116, 116)
+SettingButton.TextScaled = true
+SettingButton.TextSize = 14.000
+SettingButton.TextWrapped = true
+SettingButton.MouseButton1Click:Connect(function()
+	Setting.Visible = true
+	Farm.Visible = false
+end)
+
+FarmButton.Name = "FarmButton"
+FarmButton.Parent = Select
+FarmButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FarmButton.BackgroundTransparency = 1.000
+FarmButton.Position = UDim2.new(-3.72165772e-07, 0, 0.096371457, 0)
+FarmButton.Size = UDim2.new(1.00000048, 0, 0.130124524, 0)
+FarmButton.Font = Enum.Font.GothamSemibold
+FarmButton.Text = "Farm"
+FarmButton.TextColor3 = Color3.fromRGB(116, 116, 116)
+FarmButton.TextScaled = true
+FarmButton.TextSize = 14.000
+FarmButton.TextWrapped = true
+FarmButton.MouseButton1Click:Connect(function()
+	Setting.Visible = false
+	Farm.Visible = true
+end)
+
+KeyUI.Name = "KeyUI"
+KeyUI.Parent = RVXPLOITAFS
+KeyUI.AnchorPoint = Vector2.new(0.5, 0.5)
+KeyUI.BackgroundColor3 = Color3.fromRGB(214, 216, 216)
+KeyUI.BorderSizePixel = 0
+KeyUI.Position = UDim2.new(0.499695241, 0, 0.499769002, 0)
+KeyUI.Size = UDim2.new(0, 167, 0, 225)
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(140, 140, 140)), ColorSequenceKeypoint.new(0.22, Color3.fromRGB(126, 126, 126)), ColorSequenceKeypoint.new(0.69, Color3.fromRGB(144, 144, 144)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(145, 145, 145))}
+UIGradient_7.Parent = KeyUI
+
+Circle.Name = "Circle"
+Circle.Parent = KeyUI
+Circle.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Circle.Position = UDim2.new(0.251497, 0, 0.0977777764, 0)
+Circle.Size = UDim2.new(0, 82, 0, 80)
+
+UICorner_14.CornerRadius = UDim.new(1, 1)
+UICorner_14.Parent = Circle
+
+Lock.Name = "Lock"
+Lock.Parent = Circle
+Lock.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Lock.BackgroundTransparency = 1.000
+Lock.Position = UDim2.new(0.0829106569, 0, 0.146111101, 0)
+Lock.Size = UDim2.new(0, 68, 0, 56)
+Lock.Image = "rbxassetid://1893403245"
+Lock.ImageColor3 = Color3.fromRGB(255, 0, 0)
+
+WaitKey.Name = "WaitKey"
+WaitKey.Parent = Circle
+WaitKey.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WaitKey.BackgroundTransparency = 1.000
+WaitKey.Position = UDim2.new(-0.243902445, 0, 0.99999994, 0)
+WaitKey.Size = UDim2.new(0, 123, 0, 13)
+WaitKey.Font = Enum.Font.GothamSemibold
+WaitKey.Text = "Waiting For Key"
+WaitKey.TextColor3 = Color3.fromRGB(255, 255, 255)
+WaitKey.TextSize = 11.000
+
+Line1.Name = "Line1"
+Line1.Parent = KeyUI
+Line1.BackgroundColor3 = Color3.fromRGB(188, 188, 188)
+Line1.BorderColor3 = Color3.fromRGB(188, 188, 188)
+Line1.Position = UDim2.new(0.101796404, 0, 0.706666648, 0)
+Line1.Size = UDim2.new(0, 133, 0, 1)
+
+KeyBox.Name = "KeyBox"
+KeyBox.Parent = Line1
+KeyBox.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+KeyBox.BackgroundTransparency = 1.000
+KeyBox.Position = UDim2.new(0, 0, -18.3531189, 0)
+KeyBox.Size = UDim2.new(0, 133, 0, 19)
+KeyBox.Font = Enum.Font.GothamSemibold
+KeyBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+KeyBox.PlaceholderText = "Type the key here"
+KeyBox.Text = ""
+KeyBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+KeyBox.TextSize = 14.000
+KeyBox.FocusLost:Connect(function()
+	if KeyBox.Text == "75fsghfye3" then
+		WaitKey.Text = "Verifying Key..."
+		wait(4)
+		WaitKey.Text = "Correct Key!"
+		Lock.ImageColor3 = Color3.fromRGB(0, 255, 0)
+		wait(2)
+		WaitKey.Text = "Please wait a moment.."
+		wait(2)
+                WaitKey.Text = "Thankyou for waiting"
+		wait(2)
+		KeyUI.Visible = false
+		MainUI.Visible = true
+	end
+end)
+
+UICorner_15.CornerRadius = UDim.new(0, 4)
+UICorner_15.Parent = Line1
+
+Line2.Name = "Line2"
+Line2.Parent = KeyUI
+Line2.BackgroundColor3 = Color3.fromRGB(188, 188, 188)
+Line2.BorderColor3 = Color3.fromRGB(188, 188, 188)
+Line2.Position = UDim2.new(0.101796404, 0, 0.884444475, 0)
+Line2.Size = UDim2.new(0, 133, 0, 1)
+
+Link.Name = "Link"
+Link.Parent = Line2
+Link.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Link.BackgroundTransparency = 1.000
+Link.BorderSizePixel = 0
+Link.Position = UDim2.new(0, 0, -19, 0)
+Link.Size = UDim2.new(0, 133, 0, 19)
+Link.Font = Enum.Font.GothamSemibold
+Link.Text = "linktr.ee/ayanokojii"
+Link.TextColor3 = Color3.fromRGB(255, 255, 255)
+Link.TextSize = 14.000
+
+UICorner_16.CornerRadius = UDim.new(0, 4)
+UICorner_16.Parent = Line2
+
+Rvxploit.Name = "Rvxploit"
+Rvxploit.Parent = KeyUI
+Rvxploit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rvxploit.BackgroundTransparency = 1.000
+Rvxploit.Size = UDim2.new(0, 49, 0, 17)
+Rvxploit.Font = Enum.Font.GothamBold
+Rvxploit.Text = "RVXPLOIT"
+Rvxploit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rvxploit.TextScaled = true
+Rvxploit.TextSize = 14.000
+Rvxploit.TextWrapped = true
+
+UICorner_17.CornerRadius = UDim.new(0, 4)
+UICorner_17.Parent = KeyUI
