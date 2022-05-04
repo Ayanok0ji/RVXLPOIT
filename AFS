@@ -74,6 +74,8 @@ local UICorner_24 = Instance.new("UICorner")
 local UIGradient_9 = Instance.new("UIGradient")
 local Pattern_2 = Instance.new("ImageLabel")
 local UICorner_25 = Instance.new("UICorner")
+local EspFruitUI = Instance.new("BillboardGui")
+local FruitEspText = Instance.new("TextLabel")
 local ToggleYen = true
 local ToggleChest = true
 local ToggleEsp = true
@@ -82,6 +84,7 @@ local ToggleFarmChest = false
 local ToggleEspFruit = false
 local Multiplier = 0
 local Replicated = game:GetService("ReplicatedStorage")
+local WP = game:GetService("Workspace")
 
 RVXPLOITAFS.Name = "RVXPLOIT AFS"
 RVXPLOITAFS.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -341,7 +344,7 @@ ChestButton.MouseButton1Click:Connect(function()
 		ToggleFarmChest = true
 		ToggleChest = false
 		while ToggleFarmChest == true do
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Workspace.MouseIgnore.ChikaraCrate.ClickBox.CFrame
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = WP.MouseIgnore.ChikaraCrate.ClickBox.CFrame
 			wait(4)
 		end
 	else
@@ -538,23 +541,20 @@ EspFruitButton.MouseButton1Click:Connect(function()
 		while ToggleEspFruit == true do
 			for i,v in pairs(game.Workspace.MiscModels:GetDescendants()) do
 				if v:IsA("Part") and v.Name == "ClickBox" and v.Parent.Name == "Model"  then
-					local BillboardGui = Instance.new("BillboardGui")
-					local TextLabel = Instance.new("TextLabel")
-					
-					BillboardGui.Parent = v.Parent
-					BillboardGui.AlwaysOnTop = true
-					BillboardGui.LightInfluence = 1
-					BillboardGui.Size = UDim2.new(0, 50, 0, 50)
-					BillboardGui.StudsOffset = Vector3.new(0, 2, 0)
-					
-					TextLabel.Parent = BillboardGui
-					TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
-					TextLabel.BackgroundTransparency = 1
-					TextLabel.Size = UDim2.new(1, 0, 1, 0)
-					TextLabel.Text = "Devil Fruit"
-					TextLabel.TextColor3 = Color3.new(1, 1, 0)
-					TextLabel.TextScaled = true
-					TextLabel.Font = "GothamSemiBold"
+					EspFruitUI.Parent = v.Parent
+					EspFruitUI.AlwaysOnTop = true
+					EspFruitUI.LightInfluence = 1
+					EspFruitUI.Size = UDim2.new(0, 50, 0, 50)
+					EspFruitUI.StudsOffset = Vector3.new(0, 2, 0)
+
+					FruitEspText.Parent = EspFruitUI
+					FruitEspText.BackgroundColor3 = Color3.new(1, 1, 1)
+					FruitEspText.BackgroundTransparency = 1
+					FruitEspText.Size = UDim2.new(1, 0, 1, 0)
+					FruitEspText.Text = "Devil Fruit"
+					FruitEspText.TextColor3 = Color3.new(1, 1, 0)
+					FruitEspText.TextScaled = true
+					FruitEspText.Font = "Fantasy"
 				end
 			end
 		end
@@ -568,7 +568,7 @@ EspFruitButton.MouseButton1Click:Connect(function()
 				false
 			)
 			wait(0.5)
-			ToggleEspFruit = false
+			EspFruitUI:Destroy()
 			ToggleEsp = true
 		end
 	end
