@@ -354,6 +354,7 @@ ChestButton.MouseButton1Click:Connect(function()
 				false
 			)
 			wait(0.5)
+			ToggleFarmChest = false
 			ToggleChest = true
 		end
 	end
@@ -567,6 +568,7 @@ EspFruitButton.MouseButton1Click:Connect(function()
 				false
 			)
 			wait(0.5)
+			ToggleEspFruit = false
 			ToggleEsp = true
 		end
 	end
